@@ -1,0 +1,20 @@
+This project uses a custom dataset developed from scratch that has images and corresponding textual data for 50+ species, model uses a github pipeline to retrieve 
+this data and further feed it to the encoders for processing.
+Project uses Meta's ImageBind model that has textual and vision transformer encoders to process the data and feed it into a shared vector database, called KDB.AI vector.
+The user's query is processed by text encoders and using the Approximate Nearest Neighbour Search or Cosine Similarity Search, the query and stored data is matched and retrieved.
+This retrieved data is fed to LLM, that is Gemini. Gemini uses this retrieved data, its own knowledge and a specific prompt that it has been finetuned on to give tailored response
+generation for the queries asked that a relevant to user, thereby increasing the accuracy, source of information and reducing hallucinations.
+
+
+To access this, 
+1) Make  a 'Sample' environment on Anaconda Navigator.
+2) Open Anaconda Prompt in this environment and type-
+'cd /d -----location-of-the-folder-in-which-the-ipynb-file-is-stored-----
+3) In next line type-
+'jupyter notebook'
+4) This opens up a default browser with the jupyter notebook and you can access the ipynb file.
+5) Run the cells to download the data and models.
+6) The notebook runs certain lines of code using the Tkinter library from Python used for creating graphical user interfaces (GUIs).
+7) Once the application opens, it can run for as long as the screen remains open, even if the system is disconnected for network.
+
+THANK YOU !
